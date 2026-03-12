@@ -98,11 +98,6 @@ export default function Home() {
           <FacebookFeed />
         </div>
       </section>
-
-      <section className="py-24 md:py-40 bg-slate-50 relative overflow-hidden">
-        <img src="/ravi-transparent.png" className="absolute -right-20 bottom-0 w-[500px] opacity-10 grayscale pointer-events-none" alt="" />
-        <SchemeSection />
-      </section>
     </main>
   );
 }

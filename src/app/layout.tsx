@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/src/components/Navbar";
 import ChatOverlay from "@/src/components/ChatOverlay";
+import SocialOverlay from "@/src/components/SocialOverlay"; // New Import
 import FloatingPortraits from "@/src/components/FloatingPortraits";
 
 // Optimized font loading
@@ -12,10 +13,9 @@ export const metadata: Metadata = {
   title: "Ravi Agaram | Minority Block President Domlur",
   description: "Official portal of Ravi Agaram. Serving the people of Jogupalya and Agaram Ward. Government of Karnataka Guarantee Scheme Member.",
   icons: {
-    icon: "/ravi-logo.png", // This sets your Tab Logo
+    icon: "/ravi-logo.png",
     apple: "/ravi-logo.png",
   },
-  // Social Media Preview (How it looks on WhatsApp/Facebook)
   openGraph: {
     title: "Ravi Agaram | Public Representative",
     description: "Official Visual Archive and Service Portal",
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} antialiased relative bg-white`}>
-        {/* Fixed components */}
+        {/* Fixed Header */}
         <Navbar />
         
         {/* Background Visual Layer */}
@@ -45,6 +45,7 @@ export default function RootLayout({
         </main>
 
         {/* Global UI Overlays */}
+        <SocialOverlay /> {/* Added Instagram & Facebook Links */}
         <ChatOverlay />
       </body>
     </html>

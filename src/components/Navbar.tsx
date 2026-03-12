@@ -31,7 +31,7 @@ export default function Navbar() {
               </h1>
               <div className="flex flex-col">
                 <span className="text-[10px] md:text-[14px] font-black text-[#FF9933] uppercase tracking-widest leading-tight">
-                  Minority Block President Domlur
+                  Minority Block President Agaram
                 </span>
                 <span className="text-[8px] md:text-[11px] font-bold text-slate-400 uppercase tracking-wider leading-tight">
                   Govt of Karnataka | Guarantee Scheme Member
