@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
+import createNextIntlPlugin from 'next-intl/plugin';
 
-const nextConfig: NextConfig = {
-  /* config options here */
+// Specify the path to your request file explicitly for Turbopack
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Turbopack: {} provides the config space next-intl needs to inject aliases
+  turbopack: {}, 
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

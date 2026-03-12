@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 export default function ChatOverlay() {
   const [isOpen, setIsOpen] = useState(false);
-  const phoneNumber = "918296943810";
+  const phoneNumber = "919986000100";
   const message = encodeURIComponent("Hello, I need assistance regarding local issues/schemes.");
 
   return (
