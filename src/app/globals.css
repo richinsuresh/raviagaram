@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+/* Tailwind v4 CSS-First Configuration
+  This replaces the old tailwind.config.ts file.
+*/
+@theme {
+  /* Brand Colors (Indian National Congress Inspired) */
+  --color-congress-blue: #000080;
+  --color-congress-saffron: #FF9933;
+  --color-congress-green: #138808;
+  
+  /* Custom Gradients & Shadows */
+  --background-tricolor: linear-gradient(to right, #FF9933, #FFFFFF, #138808);
+  --shadow-premium: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  
+  /* Custom Spacing or Radius if needed */
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+}
+
+/* Base Styles */
+@layer base {
+  body {
+    @apply antialiased bg-[#FCFCFC] text-slate-900;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3 {
+    @apply tracking-tight font-bold;
+  }
+}
+
+/* Custom Component Classes (Modern UI) */
+@layer components {
+  /* Glassmorphism effect for cards */
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md border border-white/30 shadow-premium;
+  }
+
+  /* Professional Buttons */
+  .btn-primary {
+    @apply bg-congress-blue text-white px-8 py-3 rounded-xl font-bold 
+           transition-all hover:bg-blue-900 active:scale-95 shadow-lg;
+  }
+
+  .btn-outline {
+    @apply border-2 border-congress-blue text-congress-blue px-8 py-3 rounded-xl 
+           font-bold transition-all hover:bg-slate-50;
+  }
+
+  /* Tricolor Border Accent */
+  .tricolor-border {
+    @apply h-1.5 w-full;
+    background: var(--background-tricolor);
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure images load smoothly */
+img {
+  content-visibility: auto;
+}
+/* Utility to force Tailwind to scan your components folder 
+  if it's not picking up styles automatically.
+*/
+@source "../components";
+@source "../constants";
