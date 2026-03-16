@@ -63,7 +63,7 @@ export default function ContactPage() {
 
               {/* Email Card */}
               <a 
-                href="mailto:contact@raviagaram.com"
+                href="mailto:contact@raviagaram.in"
                 className="group flex items-center gap-5 md:gap-6 bg-white/80 backdrop-blur-md p-5 md:p-6 rounded-[2rem] border border-slate-100 shadow-sm hover:border-[#FF9933] transition-all"
               >
                 <div className="bg-[#FF9933] p-4 rounded-2xl text-white shadow-lg">
@@ -71,7 +71,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Official Email</p>
-                  <p className="text-xl font-bold text-gray-800">contact@raviagaram.com</p>
+                  <p className="text-xl font-bold text-gray-800">contact@raviagaram.in</p>
                 </div>
               </a>
             </div>
@@ -96,7 +96,7 @@ export default function ContactPage() {
               {/* Map Container */}
               <div className="overflow-hidden rounded-[2.3rem] bg-white">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9760502918048!2d77.6286228!3d12.9733836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17001801a1cf%3A0x922b27a0e12d6881!2sRavi%20Jogupalya%20Congress%20Office!5e0!3m2!1sen!2sin!4v1773300732324!5m2!1sen!2sin"
+                  src="https://www.google.in/maps/embed?pb=!1m18!1m12!1m3!1d3887.9760502918048!2d77.6286228!3d12.9733836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17001801a1cf%3A0x922b27a0e12d6881!2sRavi%20Jogupalya%20Congress%20Office!5e0!3m2!1sen!2sin!4v1773300732324!5m2!1sen!2sin"
                   width="100%"
                   height="350" 
                   className="block h-[300px] sm:h-[350px] md:h-[400px]"
